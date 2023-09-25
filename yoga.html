@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&family=Ysabeau+Office:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS link  -->
+    <link rel="stylesheet" href="./yoga.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-3 w-100" id="nav">
+        <div class="container">
+            <a class="navbar-brand fs-3" href="#"><i class="fa-brands fa-yoast pe-2 fs-2 color"></i>Yoga</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-3 border-end" id="myDIV">
+                    <!-- <button onclick="active()">Click</button> -->
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" aria-current="page" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#class">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-4" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <form class="d-flex align-items-center px-3 serach_bar" id="add">
+                <i class="fa-solid fa-magnifying-glass fs-4 me-3 color" onclick="change()"></i>
+                <div class="nav_search bg-white container shadow-sm rounded position-absolute">
+                    <input type="text" id="search" placeholder="Search" class="border rounded ">
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <section class="classes d-flex align-items-center" id="home">
+        <div style="margin-left: 20%;">
+            <div class="col-lg-12">
+                <h4 class="display-4"> Welcome to</h4> <br>
+                <span class="display-1">Yoga Classes</span>
+                <p class="display-6 pt-4">Lets you realize who you are <br> & what you are made of.</p>
+                <button class="butn1 d-flex align-items-center">Browse Course <i
+                        class="fa-solid fa-arrow-right-long ms-2"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section end  -->
+
+    <section class="choose pt-100 text-center" id="class">
+        <div class="container">
+            <i class="fa-solid fa-scroll fa-beat fs-1 iconc my-3"></i>
+            <h2 class="display-6 fw-bold">Choose your class</h2>
+            <p class="ptag">Each class has its own effect</p>
+            <div class="py-5">
+                <div class="row g-3 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="position-relative">
+                            <div class="overflow-hidden rounded">
+                                <img src="./img/2.jpg" alt="mg" class="w-100">
+                            </div>
+                            <div
+                                class="d-none d-lg-block bg-white w-75 p-4 rounded shadow position-absolute top-100 start-50 translate-middle">
+                                <p class="m-0 fw-normal color">Every Sunday</p>
+                                <h3 class="m-0 fs-4 fw-medium">Beginner level yoga</h3>
+                                <span class="fw-bold fs-4">$ 39</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="position-relative">
+                            <div class="overflow-hidden rounded">
+                                <img src="./img/3.jpg" alt="mg" class="w-100">
+                            </div>
+                            <div
+                                class="d-none d-lg-block bg-white w-75 p-4 rounded shadow position-absolute top-100 start-50 translate-middle">
+                                <p class="m-0 fw-normal color">Every Monday</p>
+                                <h3 class="m-0 fs-4 fw-medium">Yamas and niyamas</h3>
+                                <span class="fw-bold fs-4">$ 49</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="position-relative">
+                            <div class="overflow-hidden rounded">
+                                <img src="./img/4.jpg" alt="mg" class="w-100">
+                            </div>
+                            <div
+                                class="d-none d-lg-block bg-white w-75 p-4 rounded shadow position-absolute top-100 start-50 translate-middle">
+                                <p class="m-0 fw-normal color">Every Thursday</p>
+                                <h3 class="m-0 fs-4 fw-medium">The smart flower yoga</h3>
+                                <span class="fw-bold fs-4">$ 59</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-100 text-center mt-3 mt-md-5">
+                    <button class="butn">Browse All Classes <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section end  -->
+
+    <section class="experience p-100 mb-5" id="about">
+        <div class="container">
+            <div class="row g-3 justify-content-around">
+                <div class="col-lg-6">
+                    <div class="position-relative w-100">
+                        <img src="./img/5.jpg" alt="mg" class="rounded">
+                        <div class="img_body">
+                            <img src="./img/6.jpg" alt="mg" class="w-100 rounded">
+                        </div>
+                    </div>
+                    <div class="position-relative">
+                        <div class="position-absolute top-100 end-100 translate-middle-y">
+                            <img src="./pngimg/ring-1.png" alt="mg">
+                            <img src="./pngimg/ring-2.png" alt="mg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 start-100 translate-middle">
+                            <img src="./pngimg/ring-1.png" alt="mg">
+                            <img src="./pngimg/ring-2.png" alt="mg">
+                        </div>
+                    </div>
+                    <h3 class="display-6 fw-bold">We have <span class="color">20 years</span> <br>
+                        of experience</h3>
+                    <p class="ptag fs-5">We're all inspiring people to be happier and healthier through <br> accessible
+                        approach to yoga.</p>
+                    <ul class="list-unstyled">
+                        <li class="d-flex py-2">
+                            <div>
+                                <i class="fa-solid fa-check fa-beat fs-4 iconc"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h5>Many Styles.</h5>
+                                <p class="ptag">20+ Styles of Yoga Workout and Mediatation that suit everyone.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex py-2">
+                            <div>
+                                <i class="fa-solid fa-check fa-beat fs-4 iconc"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h5>Pro Instructors.</h5>
+                                <p class="ptag">Professional Yoga instructors from around the world.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex py-2">
+                            <div>
+                                <i class="fa-solid fa-check fa-beat fs-4 iconc"></i>
+                            </div>
+                            <div class="ps-3">
+                                <h5>Quality Content.</h5>
+                                <p class="ptag">All Our Classes are well planned by Professional Yoga Instructors.</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section end  -->
+
+    <section class="service pt-100 text-center" id="service" style="margin-top: 10%;">
+        <div class="container">
+            <i class="fa-solid fa-hands-praying fa-beat fs-1 iconc my-3"></i>
+            <h2 class="display-6 fw-bold">Our Services</h2>
+            <p class="ptag">We provide various kinds of service</p>
+            <div class="pt-100">
+                <div class="row g-4 justify-content-around">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="text-center text-md-end py-2">
+                            <i class="fa-solid fa-heart-pulse iconc fs-1 my-3"></i>
+                            <h4 class="fs-5 fw-bold">Improve Health</h4>
+                            <p class="ptag">We have Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <div class="text-center text-md-end py-2">
+                            <i class="fa-solid fa-spa iconc fs-1 my-3"></i>
+                            <h4 class="fs-5 fw-bold">Balance Your Mind</h4>
+                            <p class="ptag">We have Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <div class="text-center text-md-end py-2">
+                            <i class="fa-solid fa-newspaper iconc fs-1 my-3"></i>
+                            <h4 class="fs-5 fw-bold">Weight Loss</h4>
+                            <p class="ptag">We have Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div>
+                            <img src="./pngimg/women.png" alt="mg" class="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12">
+                        <div class="text-center text-md-start py-2">
+                            <i class="fa-regular fa-heart iconc fs-1 my-3"></i>
+                            <h4 class="fs-5 fw-bold">Sleep Better</h4>
+                            <p class="ptag">We have Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <div class="text-center text-md-start py-2">
+                            <i class="fa-brands fa-pagelines  iconc fs-1 my-3"></i>
+                            <h4 class="fs-5 fw-bold">Low Blood Pressure</h4>
+                            <p class="ptag">We have Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                        <div class="text-center text-md-start py-2">
+                            <i class="fa-solid fa-snowflake iconc fs-1 my-3"></i>
+                            <h4 class="fs-5 fw-bold">Increase Flexibility</h4>
+                            <p class="ptag">We have Lorem ipsum dolor sit amet, consectetur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- section end  -->
+
+    <section class="our p-100 text-center">
+        <div class="container">
+            <i class="fa-solid fa-jedi fa-beat iconc text-white fs-1 my-3"></i>
+            <h2 class="display-6 fw-bold text-white">Our Instructors</h2>
+            <p class="ptag text-white pb-4">Feel free to call us</p>
+            <div class="row g-3 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="imag bg-white rounded-1 p-4 shadow-sm">
+                        <img src="./img/one.jpg" alt="mg" class="rounded-circle object-fit-cover">
+                        <div>
+                            <h3 class="fs-5 fw-bold py-2 m-0">Rick Edward</h3>
+                            <span class="ptag fs-6">1 Class</span>
+                            <p class="ptag fs-6 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Reiciendis minima fuga omnis assumenda exercitationem!
+                            </p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><i class="fa-brands fa-facebook mx-2 fs-4"></i></li>
+                                <li><i class="fa-brands fa-twitter mx-2 fs-4"></i></li>
+                                <li><i class="fa-brands fa-linkedin mx-2 fs-4"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="imag bg-white rounded-1 p-4 shadow-sm">
+                        <img src="./img/three.jpg" alt="mg" class="rounded-circle object-fit-cover">
+                        <div>
+                            <h3 class="fs-5 fw-bold py-2 m-0">Alice Doe</h3>
+                            <span class="ptag fs-6">2 Class</span>
+                            <p class="ptag fs-6 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Reiciendis minima fuga omnis assumenda exercitationem!
+                            </p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><i class="fa-brands fa-facebook mx-2 fs-4"></i></li>
+                                <li><i class="fa-brands fa-twitter mx-2 fs-4"></i></li>
+                                <li><i class="fa-brands fa-linkedin mx-2 fs-4"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="imag bg-white rounded-1 p-4 shadow-sm">
+                        <img src="./img/img1.jpg" alt="mg" class="rounded-circle object-fit-cover">
+                        <div>
+                            <h3 class="fs-5 fw-bold py-2 m-0">Janice Doe</h3>
+                            <span class="ptag fs-6">3 Class</span>
+                            <p class="ptag fs-6 py-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Reiciendis minima fuga omnis assumenda exercitationem!
+                            </p>
+                            <ul class="list-unstyled d-flex align-items-center justify-content-center">
+                                <li><i class="fa-brands fa-facebook mx-2 fs-4"></i></li>
+                                <li><i class="fa-brands fa-twitter mx-2 fs-4"></i></li>
+                                <li><i class="fa-brands fa-linkedin mx-2 fs-4"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 my-md-5 text-center">
+                <button class="butn1">Browse Course <i class="fa-solid fa-arrow-right-long ms-2"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- section end  -->
+
+    <section class="p-100 position-relative" id="schedule">
+        <div class="container">
+            <div class="pb-100 text-center">
+                <i class="fa-solid fa-hourglass-half fa-beat iconc fs-1 my-2"></i>
+                <h2 class="display-6 fw-bold py-2">Yoga Schedule</h2>
+                <p class="ptag pb-4">Scheduling is one of the main points to succeed</p>
+            </div>
+            <!-- claendar  -->
+
+            <div class="calendar mx-auto">
+                <div class="month"><a href="#" class="nav"><i class="fas fa-angle-left"></i></a>
+                    <div>June <span class="year">2023</span></div><a href="#" class="nav"><i
+                            class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="days">
+                    <span>Sun</span>
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                </div>
+                <div class="dates">
+                    <button>
+                        <time>1</time>
+                    </button>
+                    <button>
+                        <time>2</time>
+                    </button>
+                    <button>
+                        <time>3</time>
+                    </button>
+                    <button>
+                        <time>4</time>
+                    </button>
+                    <button>
+                        <time>5</time>
+                    </button>
+                    <button>
+                        <time>6</time>
+                    </button>
+                    <button>
+                        <time>7</time>
+                    </button>
+                    <button>
+                        <time>8</time>
+                    </button>
+                    <button>
+                        <time>9</time>
+                    </button>
+                    <button>
+                        <time>10</time>
+                    </button>
+                    <button>
+                        <time>11</time>
+                    </button>
+                    <button>
+                        <time>12</time>
+                    </button>
+                    <button>
+                        <time>13</time>
+                    </button>
+                    <button>
+                        <time>14</time>
+                    </button>
+                    <button>
+                        <time>15</time>
+                    </button>
+                    <button>
+                        <time>16</time>
+                    </button>
+                    <button>
+                        <time>17</time>
+                    </button>
+                    <button class="today">
+                        <time>18</time>
+                    </button>
+                    <button>
+                        <time>19</time>
+                    </button>
+                    <button>
+                        <time>20</time>
+                    </button>
+                    <button>
+                        <time>21</time>
+                    </button>
+                    <button>
+                        <time>22</time>
+                    </button>
+                    <button>
+                        <time>23</time>
+                    </button>
+                    <button>
+                        <time>24</time>
+                    </button>
+                    <button>
+                        <time>25</time>
+                    </button>
+                    <button>
+                        <time>26</time>
+                    </button>
+                    <button>
+                        <time>27</time>
+                    </button>
+                    <button>
+                        <time>28</time>
+                    </button>
+                    <button>
+                        <time>29</time>
+                    </button>
+                    <button>
+                        <time>30</time>
+                    </button>
+                    <button>
+                        <time>31</time>
+                    </button>
+                </div>
+
+            </div>
+    </section>
+    <!-- section end  -->
+
+
+    <section class="blog pb-100">
+        <div class="container">
+            <div class="pb-100 text-center">
+                <i class="fa-solid fa-calendar fa-beat iconc fs-1 my-2"></i>
+                <h2 class="display-6 fw-bold py-2">From the Blog</h2>
+                <p class="ptag pb-4">You will know more information about our Center</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative text-center">
+                        <div class="overflow-hidden rounded">
+                            <img src="./img/new1.jpg" alt="mg" class="w-100">
+                        </div>
+                        <div
+                            class="d-none d-lg-block bg-white w-75 p-4 rounded shadow position-absolute top-100 start-50 translate-middle">
+                            <p class="m-0 fw-normal color">October 17,2023 | 1 Comment</p>
+                            <h3 class="m-0 fs-4 fw-medium py-3">Yoga Fitness</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative text-center">
+                        <div class="overflow-hidden rounded">
+                            <img src="./img/img.jpg" alt="mg" class="w-100">
+                        </div>
+                        <div
+                            class="d-none d-lg-block bg-white w-75 p-4 rounded shadow position-absolute top-100 start-50 translate-middle">
+                            <p class="m-0 fw-normal color">October 18,2023 | 1 Comment</p>
+                            <h3 class="m-0 fs-4 fw-medium py-3">Clear Mind And Body</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="position-relative text-center">
+                        <div class="overflow-hidden rounded">
+                            <img src="./img/one.jpg" alt="mg" class="w-100">
+                        </div>
+                        <div
+                            class="d-none d-lg-block bg-white w-75 p-4 rounded shadow position-absolute top-100 start-50 translate-middle">
+                            <p class="m-0 fw-normal color">October 19,2023 | 1 Comment</p>
+                            <h3 class="m-0 fs-4 fw-medium py-3">Explore Fashion</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end  -->
+
+    <section class="sub p-100 text-center">
+        <div class="container">
+            <i class="fa-solid fa-thumbs-up fa-beat text-white iconc fs-1 my-3"></i>
+            <h2 class="display-6 fw-bold">Subscribe to Our Newsletter</h2>
+            <p class="ptag pb-4 text-white">Get everything that you need from our UDesign Yoga Center.</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <input type="text" name="" id="email" placeholder="Email Address"
+                    class="py-2 ps-3 border rounded-start-pill w-50">
+                <button class="btn btn-success rounded-end-pill py-2 px-3">SUBSCRIBE</button>
+            </div>
+        </div>
+    </section>
+    <!-- section end  -->
+    <section class="contact p-100 text-center" id="contact">
+        <div class="container">
+            <div class="row g-3 justify-content-around">
+                <div class="col-lg-6">
+                    <div class="text-start">
+                        <h2 class="display-5 fw-bold color">10% Off</h2>
+                        <h3 class="display-4 fw-bold">Your first Season</h3>
+                        <div class="row g-3">
+                            <div class="col-lg-6">
+                                <input type="text" id="name" placeholder="Name" class="border py-3 ps-3 w-100 ">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" id="email" placeholder="Your email Address Here"
+                                    class="border py-3 ps-3 w-100 ">
+                            </div>
+                        </div>
+                        <input type="text" id="location" placeholder="Location" class="border py-3 ps-3 w-100 mt-3">
+                        <input type="text" id="class" placeholder="Class" class="border py-3 ps-3 w-100 mt-3">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"
+                            class="border py-3 ps-3 w-100 mt-3"></textarea>
+                        <button class="butn my-3">Book Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="position-relative">
+                        <img src="./img/6.jpg" alt="img3" class="w-100 h-100">
+                        <div class="reed bg-white p-4 shadow rounded-3">
+                            <p class="ptag">With Mildred Reed</p>
+                            <h4>Yoga for beginners course</h4>
+                            <h5>$39</h5>
+                        </div>
+                    </div>
+                    <button class="butn " style="margin-top: 5%;">Browse All Classes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="p-4">
+
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fa-solid fa-gem me-2"></i>TopnTech
+                        </h6>
+                        <p>
+                            Here you can use rows and columns to organize your footer content. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Courses</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">FAQ</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Teams of Service</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Become Instructor</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"> Contact Us</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"> Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset"> Support Center</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4">
+            <a class="text-reset fw-bold" href="#">@2023</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- script start  -->
+    <script>
+        function change() {
+            const butn = document.getElementById("add");
+            butn.classList.toggle("new")
+        }
+
+        window.onscroll = function () { scroll() };
+        function scroll() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                document.getElementById("nav").style.backgroundColor = "white"
+            } else {
+                document.getElementById("nav").style.backgroundColor = "rgba(255, 255, 255, 0.679)"
+            }
+        }
+
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("nav-link");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+            });
+        }
+
+    </script>
+</body>
+
+</html>
